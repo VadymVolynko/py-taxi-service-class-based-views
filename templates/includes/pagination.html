@@ -6,10 +6,7 @@
           <a class="page-link" href="?page=1">&laquo; First</a>
         </li>
         <li class="page-item">
-
-            class="page-link"
-            href="?page={{ page_obj.previous_page_number }}"
-          >Previous</a>
+          <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
         </li>
       {% endif %}
       <li class="page-item disabled">
@@ -19,16 +16,10 @@
       </li>
       {% if page_obj.has_next %}
         <li class="page-item">
-
-            class="page-link"
-            href="?page={{ page_obj.next_page_number }}"
-          >Next</a>
+          <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
         </li>
         <li class="page-item">
-
-            class="page-link"
-            href="?page={{ page_obj.paginator.num_pages }}"
-          >Last &raquo;</a>
+          <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
         </li>
       {% endif %}
     </ul>
